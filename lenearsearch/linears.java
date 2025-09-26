@@ -8,7 +8,6 @@ class linears{
         System.out.println(max(arr));
 //        int[] arr={23,45,667,43,3,33};
 //        int target=43;
-
 //        System.out.println(ls(arr,target,1,5));
 
     }
