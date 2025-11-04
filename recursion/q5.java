@@ -4,6 +4,7 @@ public interface q5 {
         System.out.println(b(arr, 8, 0, arr.length-1));
         
     }
+    //rotated binary search
     static int b(int[] arr,int tar,int s,int e){
         if(s>e){
             return -1;
