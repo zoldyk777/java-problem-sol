@@ -7,6 +7,7 @@ public class q9 {
         System.out.println(Arrays.toString(ans));
         
     }
+    // merge sort using recursion
     static int[]  mergesort(int [] arr){
         if(arr.length ==1){
             return arr;
