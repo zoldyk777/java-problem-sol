@@ -1,7 +1,8 @@
 public class q12 {
     public static void main(String[] args) {
-        skip("","bacacadae");
-        System.out.println(skipp("baaabcdcda"));
+        // skip("","bacacadae");
+        // System.out.println(skipp("baaabcdcda"));
+        System.out.println(skippapple("bapplebcdcda"));
         
 
     }
@@ -33,6 +34,20 @@ public class q12 {
         }
         else{
             return ch + skipp( up.substring(1));
+        }
+    }
+    static String skippapple(String up){
+        if(up.isEmpty()){
+            
+            return "";
+        }
+
+        
+        if(up.startsWith("apple")){
+            return skippapple(up.substring(5));
+        }
+        else{
+            return up.charAt(0) + skippapple( up.substring(1));
         }
     }
     
