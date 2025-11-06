@@ -2,7 +2,9 @@ public class q12 {
     public static void main(String[] args) {
         // skip("","bacacadae");
         // System.out.println(skipp("baaabcdcda"));
-        System.out.println(skippapple("bapplebcdcda"));
+        // System.out.println(skippapple("bapplebcdcda"));
+        System.out.println(skipappNotapple("bappbcdaapple"));
+        System.out.println(skipappNotapple("bappbcdaappi"));
         
 
     }
@@ -36,6 +38,7 @@ public class q12 {
             return ch + skipp( up.substring(1));
         }
     }
+    // skip apple in string 
     static String skippapple(String up){
         if(up.isEmpty()){
             
@@ -45,6 +48,21 @@ public class q12 {
         
         if(up.startsWith("apple")){
             return skippapple(up.substring(5));
+        }
+        else{
+            return up.charAt(0) + skippapple( up.substring(1));
+        }
+    }
+    // skip app but not apple in string
+    static String skipappNotapple(String up){
+        if(up.isEmpty()){
+            
+            return "";
+        }
+
+        
+        if(up.startsWith("app") && !up.startsWith("apple")){
+            return skippapple(up.substring(3));
         }
         else{
             return up.charAt(0) + skippapple( up.substring(1));
