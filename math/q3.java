@@ -3,7 +3,7 @@ public class q3 {
     public static void main(String[] args) {
         int n=40;
         int p=3;
-        System.out.println(sqrt(n,p));
+        System.out.printf("%.3f",sqrt(n,p));
         
     }
     static double sqrt(int n, int p){
