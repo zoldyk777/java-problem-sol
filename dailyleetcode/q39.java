@@ -8,6 +8,7 @@ class Data{
     }
 }
 class q39 {
+    
     static public long maximumProfit(int[] prices, int k) {
         final int x0=prices[0], n=prices.length;
         Data [] dp=new Data[k+1];
