@@ -10,6 +10,8 @@ class q50{
         k%=len;
         if(k==0) return head; 
 
+        
+
         tail.next=head; // circular
 
         int steps=len-k;
